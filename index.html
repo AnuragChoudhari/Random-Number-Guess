@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Game</title>
+
+    <script src="index.js"></script>
+
+</head>
+<body onload="gen_rand()">
+    
+    <div id="bg-video">
+        <video autoplay muted loop id="myVideo">
+            <source src="Lake - 91562.mp4" type="video/mp4">
+          </video>
+    </div>
+
+    <section id="main-screen">
+
+            <section id="game-display-1">
+
+                <div id="game-container-1">
+
+                        <h1>Random Number <br> Guess</h1>
+<!-- 
+                        <img src="undraw_Gaming_re_cma2 (1).png" alt=""> -->
+
+                        <button id="easyMode" onclick="easyMode()">
+                            Easy (10 attempts!)
+                        </button>
+
+                        
+                        <button id="hardMode" onclick="hardMode()">
+                            Hard (5 attempts!)
+                        </button>
+
+                </div>
+
+                <div id="game-container-2">
+
+                        <h1 id="display-text">Your Guess</h1> <br>
+
+                        <input type="text" id="userGuess" placeholder="Enter any number between 1 to 100" onchange="game_logic()">
+
+                        <h2>Number of previous attempts <span id="res1"></span></h2>
+                        <h2>Numbers you entered <span id="res2"></span></h2>
+
+                        <div id='result'></div>
+
+                        <a href="index.html" id="try-again">Try again !</a>
+
+                </div>
+
+             
+
+            </section>
+
+    </section>
+
+</body>
+</html>
