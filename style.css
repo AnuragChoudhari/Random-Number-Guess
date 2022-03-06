@@ -12,83 +12,6 @@ input[type=number]::-webkit-outer-spin-button {
   margin: 0; 
 }
 
-@media only screen and (max-width: 600px) {
-  #bg-video {
-    height: 160vh !important;
-    transform: scale(2) !important;
-    width: 100% !important;
-  }
-
-  body {
-    overflow-y: hidden !important;
-    overflow-x: hidden !important;
-  }
-
-  #main-screen {
-    /* background-color: blueviolet; */
-    height: auto !important;
-    width: 100% !important;
-    align-items: flex-end;
-  }
-
-  #game-display-1 {
-
-    margin: 50px;
-    height: 100vh;
-    
-    width: 100% !important;
-  }
-
-  h1{
-      font-size: 38px !important;
-  }
-
-  #easyMode, #hardMode{
-      font-size: 18px !important;
-  }
-
-}
-
-
-@media only screen and (max-width: 425px){
-	
-    #bg-video {
-        height: 190vh !important;
-        transform: scale(4) !important;
-        width: 100% !important;
-      }
-    
-      body {
-        overflow-y: hidden !important;
-        overflow-x: hidden !important;
-      }
-    
-      #main-screen {
-        /* background-color: blueviolet; */
-        height: auto !important;
-        width: 100% !important;
-        align-items: flex-end;
-      }
-    
-      #game-display-1 {
-    
-        margin: 50px;
-        height: 100vh;
-        width: 100% !important;
-      }
-    
-      h1{
-          font-size: 38px !important;
-      }
-    
-      #easyMode, #hardMode{
-          font-size: 18px !important;
-      }
-    
-
-}
-
-
 @media only screen and (max-width: 320px){
 	
     #bg-video {
@@ -122,11 +45,7 @@ input[type=number]::-webkit-outer-spin-button {
         text-align: left !important;
       }
     
-      #easyMode, #hardMode{
-          font-size: 18px !important;
-          width: auto !important;
-          padding: 15px !important;
-      }
+    
       
       #game-container-1{
         margin: 50px;
@@ -146,14 +65,13 @@ input[type=number]::-webkit-outer-spin-button {
 
 @media (max-width:400px){
     #bg-video {
-        height: 217vh !important;
-        transform: scale(5) !important;
-        width: 100% !important;
+        display: none;
       }
     
       body {
         overflow-y: hidden !important;
         overflow-x: hidden !important;
+        background: rgb(102, 6, 255);
       }
     
       #main-screen {
@@ -161,26 +79,26 @@ input[type=number]::-webkit-outer-spin-button {
         height: auto !important;
         width: 100% !important;
         align-items: flex-end;
+        overflow-y: hidden !important;
+        overflow-x: hidden !important;
       }
     
       #game-display-1 {
     
-        margin: 50px;
+        margin: 0px !important;
         height: 100vh;
         
         width: 100% !important;
       }
+
+      
     
       h1{
         font-size: 20px !important;
-        clear: both !important;
-     
-        white-space: pre !important;
+        padding: 5px !important;
       }
     
-      #easyMode, #hardMode{
-          font-size: 18px !important;
-      } 
+   
 
       #game-container-1{
         margin: 50px;
@@ -194,10 +112,18 @@ input[type=number]::-webkit-outer-spin-button {
         width: 100% !important;
       }
 
-      #res1, #res2{
-          font-size: 20px !important;
-          text-align: center !important;  
-          white-space: nowrap !important;
+      #easyMode, #hardMode{
+        font-size: 18px !important;
+        width: auto !important;
+        padding: 15px !important;
+    }
+
+      #easyMode {
+        background-color: rgb(163 31 237)!important;  
+      }
+
+      #hardMode {
+        background-color: rgb(83 6 167) !important;  
       }
 }
 
