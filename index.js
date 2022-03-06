@@ -56,6 +56,7 @@ function game_logic(){
         document.getElementById('result').innerHTML = "You won ! ";
         var audio = new Audio("insight-578.mp3");
         audio.play();
+        document.getElementById('try-again').style.display = "flex";
     }
 
     }
