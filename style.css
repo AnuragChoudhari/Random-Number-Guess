@@ -12,17 +12,66 @@ input[type=number]::-webkit-outer-spin-button {
   margin: 0; 
 }
 
-
-
-@media (max-width:500px){
-    #bg-video video{
-          transform: scale(2);
+@media only screen and (max-width: 320px){
+	
+    #bg-video {
+        height: 217vh !important;
+        transform: scale(5) !important;
+        width: 100% !important;
       }
     
       body {
         overflow-y: hidden !important;
         overflow-x: hidden !important;
+      }
+    
+      #main-screen {
+        /* background-color: blueviolet; */
+        height: auto !important;
+        width: 100% !important;
+        align-items: flex-end;
+      }
+    
+      #game-display-1 {
+    
+        margin: 50px;
+        height: 100vh;
         
+        width: 80% !important;
+      }
+    
+      h1{
+        font-size: 20px !important;
+        text-align: left !important;
+      }
+    
+    
+      
+      #game-container-1{
+        margin: 50px;
+        height: auto !important;
+        width: 100% !important;
+      }
+
+      #game-display-1{
+        padding: 80px;
+        margin: 0px !important;
+        height: 100vh !important;
+       
+      }
+
+
+}
+
+@media (max-width:400px){
+    #bg-video {
+        display: none;
+      }
+    
+      body {
+        overflow-y: hidden !important;
+        overflow-x: hidden !important;
+        background: rgb(102, 6, 255);
       }
     
       #main-screen {
@@ -38,7 +87,71 @@ input[type=number]::-webkit-outer-spin-button {
     
         margin: 0px !important;
         height: 100vh;
-        backdrop-filter: blur(px) brightness(0.6) !important;
+        
+        width: 100% !important;
+      }
+
+      
+    
+      h1{
+        font-size: 20px !important;
+        padding: 5px !important;
+      }
+    
+   
+
+      #game-container-1{
+        margin: 50px;
+        height: auto !important;
+        width: 100% !important;
+      }
+
+      #game-container-2{
+        margin: 50px;
+        height: auto !important;
+        width: 100% !important;
+      }
+
+      #easyMode, #hardMode{
+        font-size: 18px !important;
+        width: auto !important;
+        padding: 15px !important;
+    }
+
+      #easyMode {
+        background-color: rgb(163 31 237)!important;  
+      }
+
+      #hardMode {
+        background-color: rgb(83 6 167) !important;  
+      }
+}
+
+@media (max-width:500px){
+    #bg-video {
+        display: none;
+      }
+    
+      body {
+        overflow-y: hidden !important;
+        overflow-x: hidden !important;
+        background: rgb(102, 6, 255);
+      }
+    
+      #main-screen {
+        /* background-color: blueviolet; */
+        height: auto !important;
+        width: 100% !important;
+        align-items: flex-end;
+        overflow-y: hidden !important;
+        overflow-x: hidden !important;
+      }
+    
+      #game-display-1 {
+    
+        margin: 0px !important;
+        height: 100vh;
+        
         width: 100% !important;
       }
 
